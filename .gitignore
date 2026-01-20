@@ -181,5 +181,3 @@ chroma_db/
 # LangChain/LlamaIndex cache
 .langchain/
 .llama_index/
-
-README.md
