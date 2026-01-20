@@ -1,4 +1,4 @@
-# PiWrite V2 - Technical Specification Document
+# PiWrite - Technical Specification Document
 
 > **AI-Powered Writing Coach for K-6 Students**
 
@@ -19,7 +19,7 @@
 
 ## Executive Summary
 
-PiWrite V2 is an AI-powered educational writing assistant designed for K-6 students. The application guides students through the **5-stage writing process** (Prewriting → Drafting → Revising → Editing → Publishing) using intelligent, adaptive coaching powered by LangGraph agent orchestration.
+PiWrite is an AI-powered educational writing assistant designed for K-6 students. The application guides students through the **5-stage writing process** (Prewriting → Drafting → Revising → Editing → Publishing) using intelligent, adaptive coaching powered by LangGraph agent orchestration.
 
 ### Key Capabilities
 | Feature | Technology |
