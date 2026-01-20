@@ -796,7 +796,7 @@ NEXT_PUBLIC_BACKEND_URL=http://localhost:8003
 
 ## Summary
 
-PiWrite V2 is a sophisticated AI-powered writing coach that leverages:
+PiWrite is a sophisticated AI-powered writing coach that leverages:
 
 1. **LangGraph** for stateful, multi-stage agent orchestration
 2. **8 Specialized Sub-Agents** targeted at specific writing skills
