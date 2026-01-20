@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langgraph
+langchain
+langchain-community
+langchain-groq
+supabase
+python-dotenv
+httpx
+pydantic
+langchain-huggingface
+sentence-transformers
+tavily-python
+google-generativeai
