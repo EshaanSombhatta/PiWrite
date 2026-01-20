@@ -1,0 +1,143 @@
+@import "tailwindcss";
+/* @plugin "tailwindcss-animate"; */
+@plugin "@tailwindcss/typography";
+
+:root {
+  /* Oinkly / User Palette Mapping to Shadcn */
+  --background: #fff5f7;
+  /* User: --color-background */
+  --foreground: #2d3748;
+  /* User: --color-text */
+
+  --card: #ffffff;
+  /* User: --color-surface */
+  --card-foreground: #2d3748;
+
+  --popover: #ffffff;
+  --popover-foreground: #2d3748;
+
+  --primary: #ff6b9d;
+  /* User: --color-primary */
+  --primary-foreground: #ffffff;
+
+  --secondary: #ffd93d;
+  /* User: --color-secondary */
+  --secondary-foreground: #2d3748;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #718096;
+  /* User: --color-text-light */
+
+  --accent: #ffd93d;
+  --accent-foreground: #2d3748;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+
+  --border: #e2e8f0;
+  /* User: --color-border */
+  --input: #e2e8f0;
+  --ring: #ff6b9d;
+  /* Ring matches primary */
+
+  --radius: 1rem;
+  /* User: --radius-md */
+
+  /* Additional Oinkly Specific Vars */
+  --color-success: #6bcf7f;
+  --color-info: #4dabf7;
+  --color-warning: #ffa94d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --foreground: #ededed;
+    --card: #262626;
+    --card-foreground: #ededed;
+    --popover: #262626;
+    --popover-foreground: #ededed;
+    --primary: #ff6b9d;
+    --primary-foreground: #ffffff;
+    --secondary: #d4b21c;
+    --secondary-foreground: #1a1a1a;
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+    --accent: #d4b21c;
+    --accent-foreground: #1a1a1a;
+    --destructive: #991b1b;
+    --destructive-foreground: #fafafa;
+    --border: #404040;
+    --input: #404040;
+    --ring: #ff6b9d;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, sans-serif;
+  /* User request */
+}
+
+/* User's Custom Utility Classes */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), #ff8fab);
+  color: white;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, var(--secondary), #ffe066);
+  color: var(--foreground);
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
